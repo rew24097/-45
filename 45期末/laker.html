@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">>
+
+<head>
+    <title>45期末作業</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/lib/w3.css">
+    <link href="css/site.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/fig.css" rel="stylesheet" type="text/css">
+    <link href="css/btn1.css" rel="stylesheet" type="text/css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+
+        main {
+            background-color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="w3-content w3-section" style="max-width:5000px">
+        <img class="mySlides" src="p1.jpg" style="display:block; margin:auto;">
+        <img class="mySlides" src="p2.jpg" style="display:block; margin:auto;">
+        <img class="mySlides" src="p3.jpg" style="display:block; margin:auto;">
+        <img class="mySlides" src="p4.jpg" style="display:block; margin:auto;">
+        <img class="mySlides" src="p4.jpg" style="display:block; margin:auto;">
+    </div>
+
+
+
+
+<div id="all">
+    <header id="header">
+        <div class="logo"><img src="1577900383382.jpg"></div>
+    </header>
+    <div id="menu-wrapper">
+        <ul class="menu">
+            <li><a href="index.html">Top10</a>
+            </li>
+            <li><a href=rocket.html>火箭隊</a>
+            </li>
+            <li><a href=laker.html>湖人隊</a>
+            </li>
+            <li><a href="warrios.html">勇士隊</a>
+            </li>
+            <li><a href="bucks.html">公鹿隊</a>
+            </li>
+         </ul>
+    </div>
+    <div id="wrapper">
+        <main>
+            <div id="fig-wrapper">
+                <p class="title">人物介紹</p>
+                <section class="fig">
+                    <p class="fig-title"><a href="laker.html">LeBron James</a></p>
+                    <img class="fig-img" src="L1.jpg" alt="LeBron James">
+                </section>
+                <section class="fig">
+                    <p class="fig-title">Anthony Davis</p>
+                    <img class="fig-img" src="l2.jpg" alt="Anthony Davis">
+                </section>
+                <section class="fig">
+                    <p class="fig-title">Kyle Kuzma</p>
+                    <img class="fig-img" src="l3.jpg" alt="Kyle Kuzma">
+                </section>
+                <section class="fig">
+                    <p class="fig-title">Alex Caruso</p>
+                    <img class="fig-img" src="l4.jpg" alt="Alex Caruso">
+                </section>
+                <section class="fig">
+                    <p class="fig-title">David Howard</p>
+                    <img class="fig-img" src="l5.jpg" alt="David Howard">
+                </section>     
+                <section class="fig">
+                    <p class="fig-title">Pierre Rondo</p>
+                    <img class="fig-img" src="l6.jpg" alt="Pierre Rondo">
+                </section>
+                <section class="fig">
+                    <p class="fig-title">Antetokounmpo</p>
+                    <img class="fig-img" src="l7.jpg" alt="Antetokounmpo">
+                </section>     
+                <section class="fig">
+                    <p class="fig-title">Amir Cousins</p>
+                    <img class="fig-img" src="l8.jpg" alt="Amir Cousins">
+                </section>
+                <section class="fig">
+                    <p class="fig-title">Richard Green</p>
+                    <img class="fig-img" src="l9.jpg" alt="Richard Green">
+                </section>          
+            </div>
+                <p class="title">歷史介紹</p>
+                <div style="border:1px blue solid;padding:10px;">
+                洛杉磯湖人（英語：Los Angeles Lakers）是一支位於美國加利福尼亞州洛杉磯的NBA籃球隊，分屬於西區的太平洋組，主場為史坦波中心。擁有悠久且輝煌歷史，其前身為明尼亞波利斯湖人（Minneapolis Lakers），在明尼亞波利斯時期獲得過5個總冠軍，1959年球隊遷至洛杉磯後，獲得11次NBA總冠軍，至今合計共奪得16次總冠軍，僅次於波士頓塞爾提克的17次。
+                <p></div>
+                <p class="title">周邊商品</p>
+                <a href="https://www.nbastore.tw/products?categories=LosAngelesLakers" target="_blank" style="text-decoration:none;color:red;">>>>>>>快來看看湖人隊周邊商品</a>
+                
+        </main>
+    </div>
+    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+
+        </script>
+
+</div>
+</body>
+
+</html>
